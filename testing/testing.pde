@@ -1,10 +1,10 @@
-int r, g, b;
+float r, g, b;
 
 void setup() {
   size(500, 500);
-  r = 255;
-  g = 128;
-  b = 0;
+  r = random(0,255);
+  g = random(0,255);
+  b = random(0,255);
   background(r, g, b);
 }
 
@@ -20,5 +20,5 @@ void draw() {
   fill(0);
   textAlign(CENTER);
   textSize(50);
-  text("r = " + str(r) + " g = " + str(g) + " b = " + str(b), width/2, height/2);
+  text("r = " + str(int(r)) + " g = " + str(int(g)) + " b = " + str(int(b)), width/2, height/2);
 }
